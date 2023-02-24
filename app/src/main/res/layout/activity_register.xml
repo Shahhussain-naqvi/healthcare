@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/baddress"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:color="@color/white"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="PHONE NUMBER"
+        android:textColor="@color/white"
+        android:inputType="phone"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:textColorHint="#3BFFFFFF"
+
+        app:layout_constraintBottom_toTopOf="@+id/med_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/med_name" />
+
+    <EditText
+        android:id="@+id/med_name"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:color="@color/white"
+        android:drawableLeft="@drawable/username_icon"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="USER NAME"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:textColorHint="#3BFFFFFF"
+
+        app:layout_constraintBottom_toTopOf="@+id/baddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_email" />
+
+    <EditText
+        android:id="@+id/r_Cpassword"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:color="@color/white"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="CONFIRM PASSWORD"
+        android:inputType="textPassword"
+        android:paddingLeft="20sp"
+        android:textColor="@color/white"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:textColorHint="#3BFFFFFF"
+
+        app:layout_constraintBottom_toTopOf="@+id/add_cart_med"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/med_price" />
+
+    <EditText
+        android:id="@+id/med_price"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:color="@color/white"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:textColorHint="#3BFFFFFF"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/r_Cpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baddress" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#DCFFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintBottom_toTopOf="@+id/r_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/r_email"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:color="@color/white"
+        android:drawableLeft="@drawable/email_icon"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="EMAIL ADDRESS"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:textColorHint="#3BFFFFFF"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/med_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/add_cart_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_bg"
+        android:text="REGISTER"
+        app:backgroundTint="#272727"
+        app:layout_constraintBottom_toTopOf="@+id/registered"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_Cpassword" />
+
+    <TextView
+        android:id="@+id/registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textColor="#DCFFFFFF"
+        android:textSize="18sp"
+
+        app:fontFamily="@font/anonymous_pro_italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_cart_med" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M Y   H E A L T H"
+        android:textColor="@color/gwhite"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/clicker_script"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

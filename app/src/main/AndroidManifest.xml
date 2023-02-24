@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my_health">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.My_health">
+        <activity
+            android:name=".article"
+            android:exported="true" />
+        <activity
+            android:name=".articles"
+            android:exported="true" />
+        <activity
+            android:name=".medicine"
+            android:exported="true" />
+        <activity
+            android:name=".medicines"
+            android:exported="true" />
+        <activity
+            android:name=".test_1"
+            android:exported="true" />
+        <activity
+            android:name=".myorders"
+            android:exported="true" />
+        <activity
+            android:name=".labtest"
+            android:exported="true" />
+        <activity
+            android:name=".booking"
+            android:exported="true" />
+        <activity
+            android:name=".doctors_details"
+            android:exported="true" />
+        <activity
+            android:name=".findmydoc"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".medicine">
+
+
+    <TextView
+        android:id="@+id/lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
+        android:text="MEDICINE"
+        android:textColor="@color/gwhite"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/med_name"
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+
+
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/input_bg"
+        android:color="@color/white"
+
+        android:drawableLeft="@drawable/labtest_icon"
+        android:drawablePadding="10sp"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:textColor="@color/white"
+        android:textColorHint="#3BFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/med_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/med_price"
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:background="@drawable/input_bg"
+        android:color="@color/white"
+        android:drawableLeft="@drawable/bcash"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:textColor="@color/white"
+        android:textColorHint="#3BFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_cart_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/input_bg"
+        android:text="ADD TO MY CART"
+        app:backgroundTint="#272727"
+        app:layout_constraintBottom_toTopOf="@+id/back_button_med"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back_button_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/input_bg"
+        android:text="BACK"
+        app:backgroundTint="#272727"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/add_cart_med" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

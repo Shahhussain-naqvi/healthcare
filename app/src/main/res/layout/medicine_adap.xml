@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/m_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="defaulttext"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        app:fontFamily="sans-serif-smallcaps" />
+    <TextView
+        android:id="@+id/m_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="defaulttext"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+
+</LinearLayout>

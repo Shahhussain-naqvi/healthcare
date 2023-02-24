@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/anonymous_pro_italic</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/clicker_script</item>
+        <item>@font/mrs_sheppards</item>
+    </array>
+</resources>
